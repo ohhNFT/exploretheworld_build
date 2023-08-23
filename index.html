@@ -82,8 +82,18 @@
 
 		var buildUrl = "Build";
 		var loaderUrl = buildUrl + "/exploretheworld_build.loader.js";
+		// var config = {
+		// 	dataUrl: buildUrl + "/exploretheworld_build.data",
+		// 	frameworkUrl: buildUrl + "/exploretheworld_build.framework.js",
+		// 	codeUrl: buildUrl + "/exploretheworld_build.wasm",
+  //       streamingAssetsUrl: "StreamingAssets",
+		// 	companyName: "DefaultCompany",
+		// 	productName: "exploretheworld_3d_unity",
+		// 	productVersion: "0.1",
+		// };
+
 		var config = {
-			dataUrl: buildUrl + "/exploretheworld_build.data",
+			dataUrl: 'https://wild-dev-server.xyz/GameData/exploretheworld_build.data',
 			frameworkUrl: buildUrl + "/exploretheworld_build.framework.js",
 			codeUrl: buildUrl + "/exploretheworld_build.wasm",
         streamingAssetsUrl: "StreamingAssets",
@@ -91,6 +101,7 @@
 			productName: "exploretheworld_3d_unity",
 			productVersion: "0.1",
 		};
+		
 
 		var container = document.querySelector("#unity-container");
 		var canvas = document.querySelector("#unity-canvas");
